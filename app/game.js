@@ -8,6 +8,7 @@ const GOALS = [
     'Visit the Grave of Steve Jobs',
     'Win Arick in the Game of Chi',
     'Build Sauna on the Sun',
+    'Seduce and have sex with the daughter of Bohdan Khmelnytsky',
     'Write the best congratulation for a Maks Birthday.'
 ]
 
