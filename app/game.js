@@ -28,9 +28,9 @@ function LoadingIndicator() {
 }
 export default function Game() {
 
-    const initialLives = localStorage.getItem('lives') ? Number(localStorage.getItem('lives')) : 24;
-    const initialGoalIndex = localStorage.getItem('goalIndex') ? Number(localStorage.getItem('goalIndex')) : 0;
-    const initialCharacterCount = localStorage.getItem('characterCount') ? Number(localStorage.getItem('characterCount')) : 0;
+    const initialLives = typeof window !== "undefined" ? (localStorage.getItem('lives') ? Number(localStorage.getItem('lives')) : 24) : 24;
+    const initialGoalIndex = typeof window !== "undefined" ? (localStorage.getItem('goalIndex') ? Number(localStorage.getItem('goalIndex')) : 0) : 0;
+    const initialCharacterCount = typeof window !== "undefined" ?  (localStorage.getItem('characterCount') ? Number(localStorage.getItem('characterCount')) : 0) : 0;
 
     const [prompt, setPrompt] = useState("");
     const [action, setAction] = useState("");
