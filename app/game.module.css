@@ -1,0 +1,126 @@
+.main {
+  max-height: -webkit-fill-available;
+  font-size: 20px;
+  color: #333;
+  background: #212121;
+  --font: "Roboto",sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.header {
+  padding: 16px 24px;
+}
+
+.lives {
+  padding: 8px 24px;
+}
+
+.next {
+  color: #366fff;
+  cursor: pointer;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: left;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px 24px;
+}
+
+.footer {
+  argin-top: auto;
+  font-size: var(--typography-header2);
+  font-weight: 700;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background: rgba(33,33,33,.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 16px 24px;
+  z-index: 1;
+}
+
+.text_container {
+  font-size: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.text_before {
+  color: #fc0;
+  z-index: 1;
+  padding-top: 1px;
+  font-size: 32px;
+}
+
+.rules {
+  font-size: 20px;
+  color: #a9a9a9;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.main_actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.ruleHeader {
+  width: 100%;
+  cursor: pointer;
+}
+
+.yellow {
+  color: #fc0;
+}
+
+.red {
+  color: #a90000;
+}
+
+.green {
+  color: #00a900;
+}
+
+.task_title {
+  font-weight: 700;
+  font-size: 48px;
+
+}
+
+.input_answer {
+  color: #fc0;
+  height: 34px;
+  width: 100%;
+  resize: none;
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  outline: none;
+  font-family: inherit;
+  font-weight: 700;
+  flex: 1 1;
+}
+
+#button-answer {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
