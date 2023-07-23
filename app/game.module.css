@@ -1,10 +1,9 @@
 .main {
-  max-height: -webkit-fill-available;
   font-size: 20px;
   color: #333;
   background: #212121;
   --font: "Roboto",sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: #fff;
