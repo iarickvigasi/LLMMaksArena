@@ -172,7 +172,7 @@ export default function Game() {
                     <div className={styles.rules}>
                         This is a game in which Maks has to compete with his own Goals in an arena controlled by LLM to determine who is the best.
                         <br/>
-                        You control a Maks actions and can help them win by typing anything you think can help or needed to achieve the goal.
+                        You control a Maks actions and can help yourself win by typing anything you think can help or needed to achieve the goal.
                         <br/>
                         The goal is to win using as few characters as possible.
                         Base prize stack is 10000$!
