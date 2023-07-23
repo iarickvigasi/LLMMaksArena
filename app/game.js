@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import styles from './game.module.css';
 import Header from "@/app/header";
 import axios from "axios"
+import * as Sentry from "@sentry/nextjs";
 
 const GOALS = [
     'Visit the Grave of Steve Jobs',
@@ -11,6 +12,13 @@ const GOALS = [
     'Seduce and have sex with the daughter of Bohdan Khmelnytsky',
     'Write the best congratulation for a Maks Birthday.'
 ]
+
+let originalConsoleLog = console.log;
+
+console.log = function(message) {
+    originalConsoleLog.apply(console, arguments); // keep the original console.log behavior
+    Sentry.captureMessage(message, 'info'); // send message to Sentry
+};
 
 function LoadingIndicator() {
     const [dots, setDots] = useState(0);
@@ -25,7 +33,7 @@ function LoadingIndicator() {
         };
     }, []);
 
-    return <div>{'.'.repeat(dots)}</div>;
+    return <div>.{'.'.repeat(dots)}</div>;
 }
 export default function Game() {
 
